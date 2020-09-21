@@ -37,7 +37,7 @@ def add_feeding(request, dog_id):
     
 class DogCreate(CreateView):
     model = Dog
-    fields = '__all__'
+    fields = ['name', 'breed', 'description', 'age']
     success_url = '/dogs/'
 
 class DogUpdate(UpdateView):
